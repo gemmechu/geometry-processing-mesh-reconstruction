@@ -164,18 +164,17 @@ surface and zero gradient away from the surface:
 
 
 $$
-{\nabla}g(\mathbf{x}) = \mathbf{v} := \begin{cases}
-  \vphantom{\left(\begin{array}{c}
-  0\\
-  0\\
-  0\end{array}\right)}
-  \mathbf{n}\_\ell & \text{ if $\exists\ \mathbf{p}\_\ell = \mathbf{x}$}, \\
-  \left(\begin{array}{c}
-    0\\
-    0\\
-    0\end{array}\right) & \text{ otherwise}.
+\nabla g(\mathbf{x}) = \mathbf{v} := 
+\begin{cases}
+  \mathbf{n}_\ell & \text{if } \exists \mathbf{p}_\ell = \mathbf{x}, \\
+  \begin{pmatrix}
+    0 \\
+    0 \\
+    0
+  \end{pmatrix} & \text{otherwise}.
 \end{cases}
 $$
+
 
 
 This is a _vector-valued_ equation. The gradients, normals and zero-vectors are
